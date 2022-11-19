@@ -12,7 +12,7 @@ $.ajaxPrefilter(function(options) {
    
 
     options.complete=function(res){
-      //console.log('执行了 complete回调：');
+      console.log('执行了 complete回调：');
       //console.log(res);
       //在complete回调函数中，可以使用resresponseJSON拿到服务器响应回来的数据
       if(res.responseJSON.status===1 && res.responseJSON.message==='身份认证失败！')
